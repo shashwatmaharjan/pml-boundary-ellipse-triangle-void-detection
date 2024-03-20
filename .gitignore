@@ -1,0 +1,49 @@
+# Ignore compiled object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Ignore executables
+*.exe
+*.out
+*.app
+
+# Ignore libraries
+*.a
+*.lib
+
+# Ignore log files
+*.log
+
+# Ignore build directories
+build/
+dist/
+target/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Ignore IDE specific files
+.idea/
+.vscode/
+
+# Extensions
+*.mat
+*.npy
+*.ipynb_checkpoints
+*.h5
+*.pdf
+
+# Folders
+/data/generation/
+/cnn/hyperparameter_search
+/residual-concatenate/hyperparameter_search
+/residual-add/hyperparameter_search
