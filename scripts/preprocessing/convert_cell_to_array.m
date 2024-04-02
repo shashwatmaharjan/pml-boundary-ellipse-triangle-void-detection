@@ -20,6 +20,9 @@ displacement_data = cat(3, displacement_data{:});
 % Reshape the data such that the shape is: [n_samples, n_time_steps, n_sensors]
 displacement_data = permute(displacement_data, [3, 2, 1]);
 
+%% Take every third timestep
+displacement_data = displacement_data(:, 1:3:end, :);
+
 % Load void data
 void_data = load(fullfile(raw_data_directory, strcat('void_', string(void_number)), 'void_data.mat')).Crack_data_yes_no_1;
 
@@ -42,6 +45,9 @@ displacement_data = cat(3, displacement_data{:});
 % Reshape the data such that the shape is: [n_samples, n_time_steps, n_sensors]
 displacement_data = permute(displacement_data, [3, 2, 1]);
 
+%% Take every third timestep
+displacement_data = displacement_data(:, 1:3:end, :);
+
 % Load void data
 void_data = load(fullfile(raw_data_directory, strcat('void_', string(void_number)), 'void_data.mat')).Crack_data_yes_no_1;
 
@@ -63,6 +69,9 @@ displacement_data = cat(3, displacement_data{:});
 
 % Reshape the data such that the shape is: [n_samples, n_time_steps, n_sensors]
 displacement_data = permute(displacement_data, [3, 2, 1]);
+
+%% Take every third timestep
+displacement_data = displacement_data(:, 1:3:end, :);
 
 % Load void data
 void_data = load(fullfile(raw_data_directory, strcat('void_', string(void_number)), 'void_data.mat')).Crack_data_yes_no_1;
